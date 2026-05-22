@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="min-h-screen w-full overflow-hidden bg-linear-to-r from-blue-950 via-purple-900 to-indigo-950 bg-size-[200%_200%] animate-gradient">
+    <div className="min-h-screen w-full overflow-hidden bg-linear-to-r from-blue-950 via-purple-900 to-red-950 bg-size-[200%_200%] animate-gradient">
       <header className="fixed inset-x-4 top-4 z-50 flex flex-col-reverse gap-4 rounded-full bg-red-500/95 p-4 shadow-lg backdrop-blur-md sm:flex-row sm:items-center sm:justify-between">
         <nav>
           <ul className="flex flex-wrap items-center justify-center gap-4 text-white font-medium sm:justify-start">
@@ -19,14 +19,28 @@ function App() {
           </ul>
         </nav>
 
-        <div className="flex items-center justify-center min-w-16 h-16">
-          <h1 className="text-white text-4xl font-bold animate-pulse sm:text-5xl">
-            Web Developer
+        <div className="flex items-center md:flex-col justify-center min-w-16 h-16 gap-2">
+          <h1 className="text-white text-3xl font-bold animate-pulse sm:text-4xl md:mr-3">
+            Web
+          </h1>
+          <h1 className="text-white text-3xl font-bold animate-pulse sm:text-4xl md:mr-3">
+            Developer
           </h1>
         </div>
       </header>
 
-      <main id="home" className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 text-center text-white">
+      <main id="home" className="mx-auto flex min-h-screen max-w-6xl flex-col items-center  justify-center px-6 text-center text-white">
+        <div className="flex md:justify-between sm:flex-row flex-col items-center">
+          <div className=" h-80 w-80 md:min-h-100 md:min-w-100 overflow-hidden rounded-full border-2 border-white/20">
+            <img src="src/asssets/ChatGPT Image 22 мая 2026 г., 11_46_22.png" alt="" className="w-full h-full object-cover" />
+          </div>
+          <p className="text-3xl bg-white/15 rounded-3xl border border-white p-3 ">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Laborum dolorum error accusamus distinctio doloribus porro sunt eum veniam libero!
+            Aspernatur dolorem perspiciatis error esse obcaecati eos ab eligendi?
+            Accusamus, similique.
+          </p>
+        </div>
         <h2 className="text-5xl font-bold sm:text-6xl lg:text-7xl">Crafting modern web experiences</h2>
         <p className="mt-6 max-w-2xl text-lg text-white/85 sm:text-xl">
           I build responsive, accessible, and polished React applications with Tailwind CSS.
